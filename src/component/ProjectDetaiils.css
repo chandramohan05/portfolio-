@@ -1,0 +1,127 @@
+/* General page wrapper */
+.project-detail {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Navbar styling */
+.project-detail .navbar {
+  position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 10px 20px;
+        border-radius: 30px;
+}
+
+.project-detail .navbar a {
+   text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: 0.3s;
+        font-size: clamp(14px, 2vw, 18px);
+}
+
+.project-detail .navbar a:hover {
+   color: yellow;
+}
+
+/* Project title */
+.project-detail h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Paragraph styling */
+.project-detail p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Section headings */
+.project-detail h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #0077ff;
+  border-bottom: 2px solid #0077ff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Team list */
+.project-detail ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.project-detail ul li {
+  margin-bottom: 5px;
+}
+
+/* Screenshots container */
+.project-detail .screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.project-detail .screenshots img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.project-detail .screenshots img:hover {
+  transform: scale(1.05);
+}
+
+/* GitHub link *
+/
+.project-detail a[href*="github.com"] {
+
+ 
+  padding: 15px 20px;
+  background-color: #24292e;
+  
+
+  
+ 
+}
+
+.project-detail a[href*="github.com"]:hover {
+    background: #0077ff;
+  
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-detail .screenshots {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-detail h1 {
+    font-size: 2rem;
+  }
+
+  .project-detail h3 {
+    font-size: 1.3rem;
+  }
+}
